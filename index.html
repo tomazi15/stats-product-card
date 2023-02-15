@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            serif: ["Inter", "sans-serif"],
+          },
+          colors: {
+            background: "#090b1a",
+            card: "	#1b1938",
+            purple: "#aa5cdb",
+            white: "#ffffff",
+            gray: "#808080",
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="bg-background">
+    <div class="flex justify-center items-center h-screen">
+      <div
+        class="flex flex-col lg:flex-row-reverse bg-card lg:h-1/2 w-10/12 rounded-xl lg:rounded-md text-white"
+      >
+        <!-- IMAGE -->
+        <div class="lg:w-1/2">
+          <img
+            class="rounded-tl-xl rounded-tr-xl lg:rounded-l-none lg:rounded-r-md bg-purple w-full lg:h-full"
+            src="./images/image-header-mobile.jpg"
+            alt="Image"
+          />
+        </div>
+
+        <!-- TEXT -->
+        <div class="lg:w-1/2 lg:p-10">
+          <div class="text-center lg:text-left px-6 lg:h-1/2">
+            <h1 class="font-serif text-2xl pt-8">
+              Get <span class="text-purple">insights</span> that help your
+              business grow.
+            </h1>
+            <p class="pt-4 text-gray">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency
+            </p>
+          </div>
+          <!-- STATS -->
+          <div
+            class="flex flex-col lg:flex-row text-center items-center lg:pt-24 py-8 px-6 gap-16 lg:h-1/2"
+          >
+            <div>
+              <h1 class="text-2xl font-medium">10k+</h1>
+              <p class="text-sm text-gray uppercase font-normal pt-1">
+                companies
+              </p>
+            </div>
+            <div class="text-2xl font-medium">
+              <h1>314</h1>
+              <p class="text-sm text-gray uppercase font-normal pt-1">
+                templates
+              </p>
+            </div>
+            <div>
+              <h1 class="text-2xl font-medium">12M+</h1>
+              <p class="text-sm text-gray uppercase font-normal pt-1">
+                queries
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
